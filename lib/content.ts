@@ -5,6 +5,8 @@ export const profile = {
   location: "Bengaluru, Karnataka, India",
   email: "anilyadav4119@gmail.com",
   linkedin: "https://www.linkedin.com/in/anil-yadav-7536b2129",
+  photo: "/anil.jpg",
+  linkedinPdf: "/linkedin.pdf",
   headline:
     "IIM Bangalore MBA Co’27 · PMP® · Ex-Amazon · Ex-Indian Army",
   kicker: "Strategy  ·  Finance  ·  Product  ·  AI & Digital Transformation",
@@ -20,6 +22,16 @@ export const profile = {
     { value: "40%", label: "Faster AI-led reporting cycles" },
     { value: "110", label: "Personnel led at 17,000+ ft" },
     { value: "100%", label: "ERP adoption in 6 months" },
+  ],
+  ticker: [
+    "IIM Bangalore EPGP Co’27",
+    "PMP®",
+    "Ex-Amazon FinOps",
+    "Ex-Indian Army Captain",
+    "Elite Commando",
+    "AI-led transformation",
+    "Defence · FinTech · Automotive",
+    "Bengaluru",
   ],
   skills: [
     "Artificial Intelligence",
@@ -39,7 +51,6 @@ export const profile = {
     "Building LLM Applications with LangChain",
     "Generative AI Overview for Project Managers",
     "Optimising Foundational Models",
-    "AWS ML & AI Practitioner",
   ],
   honors: [
     {

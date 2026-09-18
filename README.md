@@ -1,6 +1,6 @@
-# Digital Twin — Anil Yadav
+# Anil Yadav — personal site
 
-Personal site: strategy, AI, and transformation. IIM Bangalore · PMP® · Ex-Amazon · Ex-Indian Army.
+Professional site: strategy, AI, and transformation. IIM Bangalore · PMP® · Ex-Amazon · Ex-Indian Army.
 
 ## Run locally
 
