@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { portfolio, profile } from "@/lib/content";
 import { Footer, Nav } from "@/components/Chrome";
+import { DashboardGallery } from "@/components/DashboardGallery";
 
 export default function PortfolioPage() {
   return (
@@ -15,11 +16,17 @@ export default function PortfolioPage() {
             Portfolio
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[var(--color-mute)]">
-            A holding space for case work, product builds, and live projects. The Amadeus engagement
-            is in motion; additional studies will land here as they clear confidentiality.
+            Interactive analytics, case work, product builds, and live projects. Explore the
+            Tableau dashboards below, alongside strategy and transformation work.
           </p>
 
-          <div className="mt-16 space-y-4">
+          <DashboardGallery />
+
+          <h2 className="mt-20 font-[family-name:var(--font-display)] text-4xl tracking-[-0.03em]">
+            Case work &amp; builds
+          </h2>
+
+          <div className="mt-8 space-y-4">
             {portfolio.map((item, i) => (
               <article
                 key={item.title}

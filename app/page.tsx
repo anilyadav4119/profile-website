@@ -345,7 +345,7 @@ function WorkPreview() {
             <h2 className="mt-4 font-[family-name:var(--font-display)] text-5xl tracking-[-0.03em] md:text-6xl">
               Work,{" "}
               <span className="font-[family-name:var(--font-serif)] italic text-[var(--color-gold-2)]">
-                incoming.
+                in focus.
               </span>
             </h2>
           </div>
@@ -356,7 +356,15 @@ function WorkPreview() {
             Open archive →
           </Link>
         </div>
-        <div className="mt-12 grid gap-4 md:grid-cols-3">
+        <Link href="/portfolio#analytics" className="mt-10 flex flex-col justify-between gap-5 border border-[var(--color-gold)] bg-[var(--color-ink-2)] p-6 transition hover:bg-[var(--color-panel)] md:flex-row md:items-center md:p-8">
+          <div>
+            <p className="font-mono text-[10px] tracking-[0.22em] uppercase text-[var(--color-gold)]">Live / Tableau Public</p>
+            <h3 className="mt-3 font-[family-name:var(--font-display)] text-3xl tracking-[-0.03em]">Analytics &amp; dashboards</h3>
+            <p className="mt-3 text-sm leading-relaxed text-[var(--color-mute)]">Explore aviation safety patterns and an interactive career story through two Tableau projects.</p>
+          </div>
+          <span className="shrink-0 font-mono text-[11px] tracking-[0.16em] uppercase text-[var(--color-gold)]">Explore the dashboards →</span>
+        </Link>
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
           {portfolio.map((item) => (
             <Link
               key={item.title}
