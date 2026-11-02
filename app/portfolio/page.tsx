@@ -20,6 +20,18 @@ export default function PortfolioPage() {
             Tableau dashboards below, alongside strategy and transformation work.
           </p>
 
+          <section id="agentguard" aria-labelledby="agentguard-title" className="mt-16 scroll-mt-28 border border-[var(--color-line)] bg-[var(--color-ink-2)] p-6 md:p-10">
+            <p className="font-mono text-[11px] tracking-[0.24em] uppercase text-[var(--color-gold)]">Featured build / AI governance</p>
+            <h2 id="agentguard-title" className="mt-4 font-[family-name:var(--font-display)] text-4xl tracking-[-0.03em] md:text-5xl">AgentGuard</h2>
+            <p className="mt-3 text-lg text-[var(--color-gold-2)]">AI agent security &amp; governance dashboard</p>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-[var(--color-mute)]">An interactive product prototype for investigating agent risk, reviewing permissions, assigning ownership, and managing access approvals. Microsoft Fluent–inspired design combines colorful navigation with responsive layouts for desktop and phone.</p>
+            <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {[['Discover', 'Search the agent inventory', '#479ef5'], ['Investigate', 'Review risk & permissions', '#b99be6'], ['Govern', 'Manage owners & approvals', '#4ec9b0'], ['Respond', 'Apply controls & review audit events', '#e7bb64']].map(([label, detail, color]) => <div key={label} className="border border-[var(--color-line)] p-4" style={{borderTop: `3px solid ${color}`}}><p className="text-sm font-semibold" style={{color}}>{label}</p><p className="mt-2 text-xs text-[var(--color-mute)]">{detail}</p></div>)}
+            </div>
+            <p className="mt-5 max-w-3xl text-xs leading-relaxed text-[var(--color-mute)]">Built with ChatGPT assistance. Synthetic demonstration data; actions affect the browser session only. No production systems are connected.</p>
+            <a href="/dashboards/agentguard.html" target="_blank" rel="noopener noreferrer" className="mt-7 inline-block border border-[var(--color-gold)] px-5 py-3 font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-gold)]">Explore interactive demo ↗<span className="sr-only"> (opens in a new tab)</span></a>
+          </section>
+
           <DashboardGallery />
 
           <h2 className="mt-20 font-[family-name:var(--font-display)] text-4xl tracking-[-0.03em]">
